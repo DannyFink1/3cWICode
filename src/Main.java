@@ -6,8 +6,8 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         int selection;
-        float Input;
-        float Balance = 0;
+        float userInput;
+        float balance = 0;
         System.out.println("Wählen SIe ihre nächste Aktion aus:");
         System.out.println("1. Einzahlen");
         System.out.println("2. Abheben");
@@ -20,11 +20,11 @@ public class Main {
             {
                 case 1:
                     System.out.println("Wie viel wollen Sie einzahlen? in Euro");
-                    Input = scanner.nextFloat();
-                    if(Input >= 0)
+                    userInput = scanner.nextFloat();
+                    if(userInput >= 0)
                     {
-                        Balance+=Input;
-                        System.out.println(Input + "€ wurden zum Kontostand hinzugefügt!");
+                        balance+=userInput;
+                        System.out.println(userInput + "€ wurden zum Kontostand hinzugefügt!");
                     } else {
                         System.out.println("Sie müssen einen positiven Wert eingeben.");
                     }
@@ -32,18 +32,18 @@ public class Main {
 
                 case 2:
                     System.out.println("Wie viel wollen Sie abheben? in Euro");
-                    Input = scanner.nextFloat();
-                    if(Input <= Balance)
+                    userInput = scanner.nextFloat();
+                    if(userInput <= balance)
                     {
-                        Balance-=Input;
-                        System.out.println(Input + "€ wurden von Ihrem Konto abgehoben");
+                        balance-=userInput;
+                        System.out.println(userInput + "€ wurden von Ihrem Konto abgehoben");
                     } else {
                         System.out.println("Sie müssen einen Wert, kleiner/gleich als ihr Kontostand eingeben");
                     }
                     break;
 
                 case 3:
-                    System.out.println("Ihr Kontostand beträgt " + Balance + "€");
+                    System.out.println("Ihr Kontostand beträgt " + balance + "€");
                     break;
 
                 case 4:
