@@ -7,7 +7,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int selection;
         float userInput;
-        float balance = 0;
+        float balance = 1;
         System.out.println("Wählen SIe ihre nächste Aktion aus:");
         System.out.println("1. Einzahlen");
         System.out.println("2. Abheben");
