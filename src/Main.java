@@ -5,8 +5,8 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        int Iinput;
-        float Finput;
+        int selection;
+        float Input;
         float Balance = 0;
         System.out.println("Wählen SIe ihre nächste Aktion aus:");
         System.out.println("1. Einzahlen");
@@ -15,16 +15,16 @@ public class Main {
         System.out.println("4. Beenden");
 
         do {
-            Iinput = scanner.nextInt();
-            switch(Iinput)
+            selection = scanner.nextInt();
+            switch(selection)
             {
                 case 1:
                     System.out.println("Wie viel wollen Sie einzahlen? in Euro");
-                    Finput = scanner.nextFloat();
-                    if(Finput >= 0)
+                    Input = scanner.nextFloat();
+                    if(Input >= 0)
                     {
-                        Balance+=Finput;
-                        System.out.println(Finput + "€ wurden zum Kontostand hinzugefügt!");
+                        Balance+=Input;
+                        System.out.println(Input + "€ wurden zum Kontostand hinzugefügt!");
                     } else {
                         System.out.println("Sie müssen einen positiven Wert eingeben.");
                     }
@@ -32,11 +32,11 @@ public class Main {
 
                 case 2:
                     System.out.println("Wie viel wollen Sie abheben? in Euro");
-                    Finput = scanner.nextFloat();
-                    if(Finput <= Balance)
+                    Input = scanner.nextFloat();
+                    if(Input <= Balance)
                     {
-                        Balance-=Finput;
-                        System.out.println(Finput + "€ wurden von Ihrem Konto abgehoben");
+                        Balance-=Input;
+                        System.out.println(Input + "€ wurden von Ihrem Konto abgehoben");
                     } else {
                         System.out.println("Sie müssen einen Wert, kleiner/gleich als ihr Kontostand eingeben");
                     }
@@ -54,9 +54,7 @@ public class Main {
                     System.out.println("Sie müssen einer der Optionen wählen!");
             }
 
-        }while(Iinput != 4);
-
-
+        }while(selection != 4);
 
     }
 }
