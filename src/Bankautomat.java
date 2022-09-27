@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class Main {
+public class Bankautomat {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -16,14 +16,12 @@ public class Main {
 
         do {
             selection = scanner.nextInt();
-            switch(selection)
-            {
+            switch (selection) {
                 case 1:
                     System.out.println("Wie viel wollen Sie einzahlen? in Euro");
                     userInput = scanner.nextFloat();
-                    if(userInput >= 0)
-                    {
-                        balance+=userInput;
+                    if (userInput >= 0) {
+                        balance += userInput;
                         System.out.println(userInput + "€ wurden zum Kontostand hinzugefügt!");
                     } else {
                         System.out.println("Sie müssen einen positiven Wert eingeben.");
@@ -33,9 +31,8 @@ public class Main {
                 case 2:
                     System.out.println("Wie viel wollen Sie abheben? in Euro");
                     userInput = scanner.nextFloat();
-                    if(userInput <= balance)
-                    {
-                        balance-=userInput;
+                    if (userInput <= balance) {
+                        balance -= userInput;
                         System.out.println(userInput + "€ wurden von Ihrem Konto abgehoben");
                     } else {
                         System.out.println("Sie müssen einen Wert, kleiner/gleich als ihr Kontostand eingeben");
@@ -54,7 +51,7 @@ public class Main {
                     System.out.println("Sie müssen einer der Optionen wählen!");
             }
 
-        }while(selection != 4);
+        } while (selection != 4);
 
 
     }
