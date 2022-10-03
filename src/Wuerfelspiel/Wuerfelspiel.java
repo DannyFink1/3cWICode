@@ -34,7 +34,7 @@ public class Wuerfelspiel {
                             Thread.currentThread().interrupt();
                         }
 
-                        rollResult = Würfel();
+                        rollResult = doDiceRoll();
                         playerTotalResult += rollResult;
                         System.out.println(rollResult);
 
@@ -50,7 +50,7 @@ public class Wuerfelspiel {
                             Thread.currentThread().interrupt();
                         }
 
-                        rollResult = Würfel();
+                        rollResult = doDiceRoll();
                         computerTotalResult += rollResult;
                         System.out.println(rollResult);
 
@@ -79,7 +79,7 @@ public class Wuerfelspiel {
 
     }
 
-    static int Würfel() {
+    static int doDiceRoll() {
         int result;
         Random random = new Random();
         result = random.nextInt(1, 6);
