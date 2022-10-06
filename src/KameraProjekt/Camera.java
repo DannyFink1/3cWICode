@@ -26,8 +26,14 @@ public class Camera {
 
     public void takePicture()
     {
+
         String pictureCode = UUID.randomUUID().toString();
-        Picture picture = new Picture(pictureCode,24);
+        Picture picture = new Picture(pictureCode, 3);
         memoryCard.saveImage(picture);
+    }
+
+    public void checkMemoryStatus()
+    {
+        memoryCard.checkMemoryStatus();
     }
 }

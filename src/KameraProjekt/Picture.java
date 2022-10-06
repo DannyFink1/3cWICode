@@ -6,6 +6,7 @@ public class Picture {
     public int pictureSize;
 
 
+
     public Picture(String pictureCode, int pictureSize)
     {
         this.pictureCode = pictureCode;
