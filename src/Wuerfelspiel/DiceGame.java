@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 
-public class Wuerfelspiel {
+public class DiceGame {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

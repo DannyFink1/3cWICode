@@ -11,6 +11,7 @@ public class Camera {
     public Lens lens;
     public MemoryCard memoryCard;
     //Manufacturer missing
+    private int pictureSize = 2;
 
 
 
@@ -28,12 +29,23 @@ public class Camera {
     {
 
         String pictureCode = UUID.randomUUID().toString();
-        Picture picture = new Picture(pictureCode, 3);
+        Picture picture = new Picture(pictureCode, pictureSize);
         memoryCard.saveImage(picture);
     }
 
     public void checkMemoryStatus()
     {
         memoryCard.checkMemoryStatus();
+    }
+
+    public void changePictureSize(int pictureSize)
+    {
+
+        this.pictureSize = pictureSize;
+    }
+
+    public void clearActualMemoryCard()
+    {
+        memoryCard.currentCapacity = 0;
     }
 }
