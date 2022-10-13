@@ -1,11 +1,10 @@
-package CarProjekt;
+package at.fda.car;
 
 import java.util.Scanner;
 
 public class MainCar {
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         Car car1 = new Car("blue", 0.04, "12400");

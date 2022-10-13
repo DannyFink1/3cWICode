@@ -1,4 +1,4 @@
-package Wuerfelspiel;
+package at.fda.diceGame;
 
 import java.util.Random;
 import java.util.Scanner;

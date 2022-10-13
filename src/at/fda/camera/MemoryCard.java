@@ -1,11 +1,11 @@
-package KameraProjekt;
+package at.fda.camera;
 
 import java.util.ArrayList;
 
 public class MemoryCard {
 
-    public int totalCapacity = 0;
-    public int currentCapacity = 0;
+    private int totalCapacity = 0;
+    private int currentCapacity = 0;
 
     public ArrayList<Picture> memory = new ArrayList<Picture>();
 
@@ -19,8 +19,7 @@ public class MemoryCard {
             this.currentCapacity += picture.pictureSize;
             this.memory.add(picture);
             System.out.println("Foto wurde geschossen");
-        }
-        else {
+        } else {
             System.out.println("Speicher ist voll! Foto konnte nicht abgespeichert werden!");
         }
     }
@@ -35,4 +34,15 @@ public class MemoryCard {
         System.out.println(currentCapacity + "GB/" + totalCapacity + " GB belegt");
     }
 
+    public void setCurrentCapacity(int currentCapacity) {
+        this.currentCapacity = currentCapacity;
+    }
+
+    public int getTotalCapacity() {
+        return totalCapacity;
+    }
+
+    public int getCurrentCapacity() {
+        return currentCapacity;
+    }
 }

@@ -1,4 +1,4 @@
-package CarProjekt;
+package at.fda.car;
 
 public class Car {
 
@@ -7,8 +7,7 @@ public class Car {
     public String serialNumber;
     public int speed;
 
-    public Car(String color, double fuelConsumption, String serialNumber)
-    {
+    public Car(String color, double fuelConsumption, String serialNumber) {
 
         this.color = color;
         this.fuelConsumption = fuelConsumption;
@@ -17,13 +16,11 @@ public class Car {
     }
 
 
-    public void speedUp(int amount)
-    {
+    public void speedUp(int amount) {
         this.speed += amount;
     }
 
-    public void slowDown(int amount)
-    {
+    public void slowDown(int amount) {
         this.speed -= amount;
     }
 

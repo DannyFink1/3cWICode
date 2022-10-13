@@ -1,4 +1,4 @@
-package Bankautomat;
+package at.fda.atm;
 
 import java.util.Scanner;
 

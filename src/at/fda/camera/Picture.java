@@ -1,4 +1,4 @@
-package KameraProjekt;
+package at.fda.camera;
 
 public class Picture {
 
@@ -6,9 +6,7 @@ public class Picture {
     public int pictureSize;
 
 
-
-    public Picture(String pictureCode, int pictureSize)
-    {
+    public Picture(String pictureCode, int pictureSize) {
         this.pictureCode = pictureCode;
         this.pictureSize = pictureSize;
     }
