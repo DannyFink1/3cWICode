@@ -140,7 +140,6 @@ public class Main {
                     } else {
                         System.out.println("Eingabe fehlgeschlagen!");
                     }
-
                     break;
                 case 5:
                     System.out.println("Bis Baldrian!");

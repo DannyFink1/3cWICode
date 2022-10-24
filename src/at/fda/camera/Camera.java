@@ -10,8 +10,6 @@ public class Camera {
     private final String modelName;
     private Lens lens;
     private MemoryCard memoryCard;
-
-
     private int pictureSize = 2;
 
 

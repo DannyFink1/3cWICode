@@ -1,4 +1,4 @@
-package at.fda.car;
+package at.fda.carStopped;
 
 import java.util.Scanner;
 
