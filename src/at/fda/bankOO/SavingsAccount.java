@@ -11,8 +11,8 @@ public class SavingsAccount extends MainAccount {
 
     public void addInterestToBalance()
     {
-        ba
-        System.out.println(getBalance());
+        setBalance(getBalance() + getBalance()/100*interest);
+        System.out.println("Zinsen wurden hinzugefügt! \n   neuer Kontostand: " + getBalance() + "€");
     }
     public int getInterest() {
 
@@ -20,7 +20,7 @@ public class SavingsAccount extends MainAccount {
     }
 
     public void setInterest(int interest) {
-
         this.interest = interest;
+        System.out.println("Zinssatz wurde aktualisiert!");
     }
 }
