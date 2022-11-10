@@ -11,10 +11,12 @@ public class MainAccount {
     }
 
     public String getAccountID() {
+        System.out.println(accountID);
         return accountID;
     }
 
     public String getOwner() {
+        System.out.println(owner);
         return owner;
     }
 
@@ -22,7 +24,9 @@ public class MainAccount {
         return balance;
     }
 
-
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
 
     public void depositMoney(double deposit)
     {
@@ -35,5 +39,10 @@ public class MainAccount {
             this.balance -= withdraw;
         else
             System.out.println("Sie können nicht so viel abheben!");
+    }
+
+    public void checkBalance()
+    {
+        System.out.println("Kontostand beträgt: " + this.balance + "€");
     }
 }

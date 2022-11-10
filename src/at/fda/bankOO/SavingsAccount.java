@@ -6,13 +6,14 @@ public class SavingsAccount extends MainAccount {
     private int interest = 0;
 
     public SavingsAccount(String accountID, String owner) {
+
         super(accountID, owner);
     }
 
     public void addInterestToBalance()
     {
-        ba
-        System.out.println(getBalance());
+        setBalance(getBalance() + getBalance()*interest/100);
+
     }
     public int getInterest() {
 
