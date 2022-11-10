@@ -1,4 +1,4 @@
-package at.fda.bankOO;
+package at.fda.bankOO.accounts;
 
 public class MainAccount {
     private String accountID;
@@ -24,7 +24,7 @@ public class MainAccount {
         return balance;
     }
 
-    public void setBalance(double balance) {
+    protected void setBalance(double balance) {
         this.balance = balance;
     }
 

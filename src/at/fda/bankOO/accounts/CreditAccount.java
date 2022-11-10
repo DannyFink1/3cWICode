@@ -1,16 +1,15 @@
-package at.fda.bankOO;
+package at.fda.bankOO.accounts;
 
-public class CheckAccount extends MainAccount {
-
+public class CreditAccount extends MainAccount {
 
     private double credit;
 
-    public CheckAccount(String accountID, String owner) {
+    public CreditAccount(String accountID, String owner) {
         super(accountID, owner);
     }
 
-    //Override
-    public void withdraw(double withdraw)
+    @Override
+    public void withdrawMoney(double withdraw)
     {
         if(withdraw <= getBalance() + credit) {
             setBalance(getBalance()-withdraw);
@@ -26,4 +25,6 @@ public class CheckAccount extends MainAccount {
     public void openCredit(double credit) {
         this.credit = credit;
     }
+
+
 }

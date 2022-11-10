@@ -1,4 +1,7 @@
 package at.fda.bankOO;
+
+import at.fda.bankOO.accounts.*;
+
 import java.util.UUID;
 
 public class Main {
@@ -14,10 +17,22 @@ public static void main(String[] args){
     savingsAccount.addInterestToBalance();
     savingsAccount.checkBalance();
 
+    CreditAccount creditAccount = new CreditAccount(uuid, "Daniel");
+    creditAccount.depositMoney(1300);
+    creditAccount.openCredit(20000);
+    creditAccount.withdrawMoney(21000);
+
     CheckAccount checkAccount = new CheckAccount(uuid, "Daniel");
-    checkAccount.depositMoney(1300);
-    checkAccount.openCredit(20000);
-    checkAccount.withdraw(21000);
+    checkAccount.setWithdrawLimit(200);
+    checkAccount.depositMoney(1000);
+    checkAccount.withdrawMoney(220);
+
+    LaendleCheckAccount laendleCheckAccount = new LaendleCheckAccount(uuid, "Daniel");
+    laendleCheckAccount.setWithdrawLimit(1000);
+    laendleCheckAccount.depositMoney(212234);
+    laendleCheckAccount.withdrawMoney(12002);
+    laendleCheckAccount.checkLaendleDetails();
+
 
 }
 
