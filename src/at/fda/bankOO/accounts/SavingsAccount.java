@@ -25,3 +25,4 @@ public class SavingsAccount extends MainAccount {
         this.interest = interest;
     }
 }
+

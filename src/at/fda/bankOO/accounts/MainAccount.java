@@ -46,3 +46,4 @@ public class MainAccount {
         System.out.println("Kontostand beträgt: " + this.balance + "€");
     }
 }
+
