@@ -1,18 +1,15 @@
-package at.fda.camera;
+package at.fda.smartphone.object;
 
 import java.util.ArrayList;
 
-public class MemoryCard {
+public class Memorycard {
 
-    private int totalCapacity = 0;
     private int currentCapacity = 0;
-
+    private int totalCapacity;
     public ArrayList<Picture> memory = new ArrayList<Picture>();
 
-
-    public MemoryCard(int capacity) {
-
-        this.totalCapacity = capacity;
+    public Memorycard(int totalCapacity) {
+        this.totalCapacity = totalCapacity;
     }
 
     public void saveImage(Picture picture) {
@@ -26,24 +23,10 @@ public class MemoryCard {
     }
 
     public void printMemoryStatus() {
+        System.out.println();
         for (Picture picture : memory) {
             System.out.println(picture.pictureCode);
         }
     }
 
-    public void checkMemoryStatus() {
-        System.out.println(currentCapacity + "GB/" + totalCapacity + " GB belegt");
-    }
-
-    public void setCurrentCapacity(int currentCapacity) {
-        this.currentCapacity = currentCapacity;
-    }
-
-    public int getTotalCapacity() {
-        return totalCapacity;
-    }
-
-    public int getCurrentCapacity() {
-        return currentCapacity;
-    }
 }
