@@ -13,8 +13,8 @@ public class Simcard {
         this.simID = uuid;
     }
 
-    public void doCall(int callNumber){
-        System.out.println("Versucht " + callNumber + " anzurufen...\nFehlgeschlagen");
+    protected void doCall(int callNumber){
+        System.out.println("Versucht " + callNumber + " anzurufen...");
     }
 
     public String getSimID() {

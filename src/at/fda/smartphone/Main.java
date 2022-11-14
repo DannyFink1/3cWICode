@@ -16,7 +16,7 @@ public class Main {
         Camera camera2 = new Camera(20,"Sieben");
 
         phone1.changeCamera(camera2);
-        phone1.checkMemoryStatus();
+        phone1.printAllFiles();
 
     }
 }

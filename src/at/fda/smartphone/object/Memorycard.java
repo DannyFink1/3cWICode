@@ -6,13 +6,13 @@ public class Memorycard {
 
     private int currentCapacity = 0;
     private int totalCapacity;
-    public ArrayList<Picture> memory = new ArrayList<Picture>();
+    private ArrayList<Picture> memory = new ArrayList<Picture>();
 
     public Memorycard(int totalCapacity) {
         this.totalCapacity = totalCapacity;
     }
 
-    public void saveImage(Picture picture) {
+    protected void saveImage(Picture picture) {
         if (currentCapacity <= totalCapacity - picture.pictureSize) {
             this.currentCapacity += picture.pictureSize;
             this.memory.add(picture);
@@ -21,12 +21,22 @@ public class Memorycard {
             System.out.println("Speicher ist voll! Foto konnte nicht abgespeichert werden!");
         }
     }
-
-    public void printMemoryStatus() {
-        System.out.println();
-        for (Picture picture : memory) {
-            System.out.println(picture.pictureCode);
-        }
+    protected int getFreeSpace(){
+        return totalCapacity - currentCapacity;
+    }
+    protected ArrayList<Picture> getAllFiles() {
+        return memory;
     }
 
+    public int getCurrentCapacity() {
+        return currentCapacity;
+    }
+
+    public int getTotalCapacity() {
+        return totalCapacity;
+    }
+
+    public ArrayList<Picture> getMemory() {
+        return memory;
+    }
 }
