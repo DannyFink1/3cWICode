@@ -82,8 +82,8 @@ public class DiceGame {
     static int doDiceRoll() {
         int result;
         Random random = new Random();
-        result = random.nextInt(1, 6);
+        //result = random.nextInt(1, 6);
 
-        return result;
+        return 4;
     }
 }
