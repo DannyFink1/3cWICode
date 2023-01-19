@@ -1,4 +1,4 @@
-package at.fda.diceGame;
+package at.fda.b_diceGame;
 
 import java.util.Random;
 import java.util.Scanner;

@@ -1,9 +1,5 @@
-package at.fda.smartphone.object;
+package at.fda.d_smartphone.object;
 
-
-
-import java.util.ArrayList;
-import java.util.UUID;
 
 public class Phone {
     private Camera camera;

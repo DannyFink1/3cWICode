@@ -1,5 +1,5 @@
-package at.fda.smartphone;
-import at.fda.smartphone.object.*;
+package at.fda.d_smartphone;
+import at.fda.d_smartphone.object.*;
 
 public class Main {
 

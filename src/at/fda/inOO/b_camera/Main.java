@@ -1,4 +1,4 @@
-package at.fda.camera;
+package at.fda.b_camera;
 import java.util.ArrayList;
 import java.util.Scanner;
 

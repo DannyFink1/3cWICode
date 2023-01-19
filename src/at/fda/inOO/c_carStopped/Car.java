@@ -1,4 +1,4 @@
-package at.fda.carStopped;
+package at.fda.c_carStopped;
 
 public class Car {
 

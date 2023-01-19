@@ -1,4 +1,4 @@
-package at.fda.bankOO.accounts;
+package at.fda.a_bankOO.accounts;
 
 public class CheckAccount extends MainAccount {
 

@@ -1,4 +1,4 @@
-package at.fda.atm;
+package at.fda.a_atm;
 
 import java.util.Scanner;
 

@@ -1,6 +1,6 @@
-package at.fda.bankOO;
+package at.fda.a_bankOO;
 
-import at.fda.bankOO.accounts.*;
+import at.fda.a_bankOO.accounts.*;
 
 import java.util.UUID;
 
