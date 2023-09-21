@@ -18,11 +18,8 @@ public class Disk {
         this.diskLength = getDiskLength() + title.getLength();
     }
 
-    public void addTitleToLost(List titleList){
-        for (Object title: titleList) {
-
-        }
-
+    public void addTitleToList(List<Title> titleList){
+        this.titleList.addAll(titleList);
     }
     public String getDiskTitle() {
         return diskTitle;
